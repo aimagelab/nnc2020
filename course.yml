@@ -1,0 +1,34 @@
+chunks:
+
+-
+    title: "Login"
+    id: access-forbidden
+    rules:
+        - if_has_role: [student, ta, instructor]
+          weight: 100
+          shown: false
+
+        - weight: 100
+          shown: true
+
+    content: |
+
+        You need to log-in to see this page, and you need to be enrolled in the course.
+
+-
+    title: "Welcome"
+    id: welcome
+    rules:
+        - if_has_role: [student, ta, instructor]
+          weight: 100
+          shown: true
+
+        - weight: 100
+          shown: false
+
+
+    content: |
+
+        # Neural Network Computing, AI and Machine Learning for Automotive 2020
+
+        Welcome! This platform will be used to host exercises and tests for the "Neural Network Computing, AI and Machine Learning for Automotive" course.
