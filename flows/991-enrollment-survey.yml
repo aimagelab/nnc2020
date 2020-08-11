@@ -1,0 +1,49 @@
+title: "Enrollment survey"
+
+description: |
+
+    # Enrollment survey
+
+    **Planning to attend this course?**
+
+    With this survey, you can give us information on your background, so that we can prepare and tailor the course
+    accordingly.
+
+    ### Instructions
+    - After completing the session, please click on **the green tick box** in the upper-right to submit the
+      survey. Otherwise, it will be considered in a draft state.
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, see_correctness, change_answer]
+
+    grade_aggregation_strategy: use_latest
+
+    grade_identifier: examdate
+    grading:
+    -
+        credit_percent: 100
+
+pages:
+-
+      type: SurveyChoiceQuestion
+      id: degree_course
+      title: Your background
+      prompt: Which Master degree course are you enrolled in?
+      choices:
+        - Ingegneria Informatica
+        - Advanced Automotive Electronic Engineering
+        - Electronics Engineering
+        - Informatica
+        - Other
