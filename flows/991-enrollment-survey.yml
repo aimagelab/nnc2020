@@ -16,7 +16,7 @@ description: |
 rules:
     start:
     -
-        if_has_role: [student, ta, instructor]
+        if_has_role: [student, ta, instructor, unerroled]
         may_start_new_session: True
         may_list_existing_sessions: True
 
@@ -30,10 +30,7 @@ rules:
 
     grade_aggregation_strategy: use_latest
 
-    grade_identifier: examdate
-    grading:
-    -
-        credit_percent: 100
+    grade_identifier: null
 
 pages:
 -
