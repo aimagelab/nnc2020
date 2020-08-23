@@ -37,7 +37,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: degree_course
-      value: 0
+      is_optional_page: true
       title: Which Master degree course are you enrolled in?
       prompt: Which Master degree course are you enrolled in?
       choices:
@@ -50,7 +50,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: programming
-      value: 0
+      is_optional_page: true
       title: How would you define your programming background?
       prompt: How would you define your programming background?
       choices:
@@ -63,7 +63,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: aidl
-      value: 0
+      is_optional_page: true
       title: How would you define your background in AI and Deep Learning?
       prompt: How would you define your background in AI and Deep Learning?
       choices:
