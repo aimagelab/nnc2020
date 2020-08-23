@@ -59,7 +59,7 @@ pages:
 
 -
       type: SurveyChoiceQuestion
-      id: programming
+      id: aidl
       title: Your background
       prompt: How would you define your background in AI and Deep Learning?
       choices:
