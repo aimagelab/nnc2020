@@ -27,7 +27,7 @@ rules:
 
     access:
     -
-        permissions: [view, submit_answer, end_session]
+        permissions: [view, submit_answer, end_session, change_answer]
 
     grade_aggregation_strategy: use_latest
 
