@@ -27,7 +27,7 @@ rules:
 
     access:
     -
-        permissions: [view, submit_answer, end_session, change_answer]
+        permissions: [view, submit_answer, end_session, send_email_about_flow_page, see_session_time]
 
     grade_aggregation_strategy: use_latest
 
@@ -37,7 +37,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: degree_course
-      title: Your background
+      title: Which Master degree course are you enrolled in?
       prompt: Which Master degree course are you enrolled in?
       choices:
         - Ingegneria Informatica
@@ -49,7 +49,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: programming
-      title: Your background
+      title: How would you define your programming background?
       prompt: How would you define your programming background?
       choices:
         - I am proficient in Python programming
@@ -61,7 +61,7 @@ pages:
 -
       type: SurveyChoiceQuestion
       id: aidl
-      title: Your background
+      title: How would you define your background in AI and Deep Learning?
       prompt: How would you define your background in AI and Deep Learning?
       choices:
         - I already took other Master courses on the topic, and passed the examination
