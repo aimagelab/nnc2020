@@ -16,7 +16,7 @@ description: |
 rules:
     start:
     -
-        if_has_role: [student, ta, instructor, unerroled]
+        if_has_role: [student, ta, instructor, unenrolled]
         may_start_new_session: True
         may_list_existing_sessions: True
 
