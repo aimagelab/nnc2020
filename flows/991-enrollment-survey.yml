@@ -40,9 +40,29 @@ pages:
       prompt: Which Master degree course are you enrolled in?
       choices:
         - Ingegneria Informatica
+        - Informatica
         - Advanced Automotive Electronic Engineering
         - Electronics Engineering
-        - Informatica
         - Other
 
+-
+      type: SurveyChoiceQuestion
+      id: programming
+      title: Your background
+      prompt: How would you define your programming background?
+      choices:
+        - I am proficient in Python programming
+        - I am proficient in at least another language, but not in Python
+        - I have some programming experience (e.g. I took introductory programming courses), but I am not proficient
+          in any programming langauge
+        - I don't have any programming experience
 
+-
+      type: SurveyChoiceQuestion
+      id: programming
+      title: Your background
+      prompt: How would you define your background in AI and Deep Learning?
+      choices:
+        - I already took other Master courses on the topic, and passed the examination
+        - I already took other Master courses on the topic, but I am still waiting to pass the examination
+        - I don't have any background in AI and Deep Learning
