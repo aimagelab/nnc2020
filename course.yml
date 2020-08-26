@@ -38,7 +38,7 @@ chunks:
 
         <div class="alert alert-success" role="alert">
           <i class="fas fa-poll"></i> Planning to attend this course? Take this
-        [short survey](flow:991-enrollment-survey) to help us prepare the lectures.
+        <a href="/courses/course/nnc2020/flow/991-enrollment-survey/start/">short survey</a> to help us prepare the lectures.
         </div>
 
 
