@@ -4,7 +4,7 @@ chunks:
     title: "Login"
     id: access-forbidden
     rules:
-        - if_has_role: [student, ta, instructor, unenrolled]
+        - if_has_role: [student, ta, instructor]
           weight: 100
           shown: false
 
