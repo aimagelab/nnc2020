@@ -19,7 +19,7 @@ chunks:
     title: "Welcome"
     id: welcome
     rules:
-        - if_has_role: [student, ta, instructor, unenrolled]
+        - if_has_role: [student, ta, instructor]
           weight: 100
           shown: true
 
