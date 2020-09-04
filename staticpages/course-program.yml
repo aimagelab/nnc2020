@@ -1,0 +1,74 @@
+chunks:
+
+  - title: "Login"
+    id: access-forbidden
+    rules:
+      - if_has_role: [student, ta, instructor]
+        weight: 100
+        shown: false
+
+      - weight: 100
+        shown: true
+
+    content: |
+
+      You need to log-in to see this page, and you need to be enrolled in the course.
+
+
+  - title: "Course program"
+    id: course-program
+    rules:
+      - if_has_role: [student, ta, instructor]
+        weight: 100
+        shown: true
+
+      - weight: 100
+        shown: false
+
+    content: |
+      # Course program
+
+      ## Objectives
+      The course aims to provide knowledge and skills on the development of Artificial Intelligence (AI) systems for the Automotive. It provides an initial overview, also of an economic impact type, on AI systems that are used in automotive, both for ADAS, for autonomous driving, for human-vehicle interaction and for industrial production. The course offers a detailed overview of the state of the art of AI technologies and above all of deep learning, oriented to visual understanding, action and interaction in the Automotive field, and provides advanced skills on the design of Deep Learning algorithms, also in reference to their optimization and deployment on architectures with reduced computational capacity. Computer vision techniques for the geometric understanding of spaces, machine learning techniques and practices for the design and implementation of completely connected, convolutive neural architectures, and for the understanding and generation of time sequences are presented. An important part of the course is dedicated to the study of architectures and solutions for the visual understanding of data from cameras positioned inside and outside the passenger compartment - with particular reference to motion estimation, object identification, segmentation semantics the prediction of trajectories, the understanding of the surrounding environment and the monitoring of the driver and his attention state.
+
+      ## Prerequisites
+      Basic knowledge of statistics, linear algebra, geometry introduced in the three-year and master's courses of the Engineering degrees. Knowledge of computer architecture and basic knowledge of the Python language (which, however, is taken up again in the course). The Vision and Cognitive Systems course provides useful elements for this course.
+
+      ## Contents
+      #### History and impact of AI in Automotive*
+      Introduction to the history of AI and to its economical impact in the Automotive domain. AI and Computer Vision for Automotive.
+
+      #### Neural Architectures fundamentals
+      Gradient-based optimization, fully connected and convolutional architectures. Analysis of computational costs and computational graph management. Design practices, network surgery.
+
+      #### On-board sensors and cameras, depth sensors
+      Analysis of commercial on-board sensors, depth, thermal and RGB cameras.
+
+      #### Sequence modelling and prediction
+      Recurrent, Convolutional and Fully-Attentive architectures for sequence understanding and generation. Computational graph analysis. Self-attention and cross-attention. Applications to trajectory prediction and language-based interfaces.
+
+      #### Visual understanding algorithms
+      Algorithms and techniques for motion estimation, architectures for video object detection and trajectory prediction. Planar Distance estimation, road segmentation, road lane detection. Driver Monitoring, Driver Distraction prediction, eye fixation prediction.
+
+      #### Reinforcement learning for navigation
+      Markov decision processes, policy learning strategies. Algorithms for locomotion and navigation. Simulated environments and strategies for deployment in real settings. Applications to autonomous driving.
+
+      #### Architecture optimization and compression
+      Weight matrix factorization, quantization and pruning approaches. Design practices for optimization.
+
+      ## Teaching methods
+      Most of the lessons are frontal and use scientific slides and papers as didactic support; about 30% of the lessons are laboratory, with hands-on experiences on tensor computation libraries and the design and training of neural networks and AI algorithms for the Automotive. Upon completion, meetings and discussions with companies are organized. Students are required to develop a final project (to be presented during the exam) which requires the study and development of a predictive algorithm applicable in the automotive field, its experimental validation and possibly the collection of data. The presentation of the project must be accompanied by the delivery of the developed code and a technical report describing the approach, its positioning in the literature, the datasets used and the experimental results obtained.
+
+      All lessons will be streamed on Google Meet. The recordings of the lessons will also be available.
+
+      ## Exam
+      The exam consists of an oral test, with theoretical questions, presentation of the laboratories developed during the course, and presentation of the final project (see the section "teaching methods").
+
+      ## Reference books
+      Slides and scientific papers from international conferences and journals (CVPR; ECCV; ICCV; T-PAMi. IVPR, IEEE ITS; IEEE IV)
+
+      ## Expected learning outcomes
+      - Advanced knowledge of Deep Learning, Computer Vision and Cognitive Systems solutions oriented towards visual understanding, action and interaction.
+      - Advanced knowledge of the Python language and ability to autonomously develop neural networks and Deep Learning algorithms in PyTorch.
+      - Ability to develop software solutions for autonomous driving, the understanding of video and visual data from camera-car, integration with sensors and human-vehicle interaction.
+      - Knowledge of strategies for the optimized deployment of neural architectures.
